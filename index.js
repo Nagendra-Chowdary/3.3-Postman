@@ -16,6 +16,7 @@ app.get("/", (req, res) => {
 app.post("/register", (req, res) => {
   //Do something with the data
   res.sendStatus(201);
+//201 will send msg create
 });
   
 
@@ -26,10 +27,12 @@ app.put("/user/angela", (req, res) => {
 
 app.patch("/user/angela", (req, res) => {
   res.sendStatus(200);
+  //200 will send msg ok
+
 });
 
 app.delete("/user/angela", (req, res) => {
-  //Deleting
+  //Deleting user
   res.sendStatus(200);
 });
 
